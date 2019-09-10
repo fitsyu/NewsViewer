@@ -8,6 +8,9 @@ target 'NewsViewer' do
   pod 'Alamofire'
   pod 'PromisesSwift'
   
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  
   # Pods for NewsViewer
 
 end
