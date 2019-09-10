@@ -3,13 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0FEF1DD6CF126ECB3F47D8F1 /* Pods_NewsViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A2A4ACF98B3565E49B27BA /* Pods_NewsViewer.framework */; };
 		E8392124232789D300AB9764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8392122232789D300AB9764 /* LaunchScreen.storyboard */; };
 		E839212E23278A0C00AB9764 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839212D23278A0C00AB9764 /* main.swift */; };
+		E839213123278B2300AB9764 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839213023278B2300AB9764 /* APIClient.swift */; };
+		E83921342327905300AB9764 /* SourcesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83921332327905300AB9764 /* SourcesResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		E8392125232789D300AB9764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E839212C23278A0B00AB9764 /* NewsViewer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewsViewer-Bridging-Header.h"; sourceTree = "<group>"; };
 		E839212D23278A0C00AB9764 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E839213023278B2300AB9764 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		E83921332327905300AB9764 /* SourcesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesResponse.swift; sourceTree = "<group>"; };
 		F97803B40C4DAEF59C5FA818 /* Pods-NewsViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsViewer.release.xcconfig"; path = "Target Support Files/Pods-NewsViewer/Pods-NewsViewer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +45,6 @@
 				B166B4F745E176DEB622C33E /* Pods-NewsViewer.debug.xcconfig */,
 				F97803B40C4DAEF59C5FA818 /* Pods-NewsViewer.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -67,6 +70,8 @@
 		E8392118232789D200AB9764 /* NewsViewer */ = {
 			isa = PBXGroup;
 			children = (
+				E83921322327904200AB9764 /* Data Models */,
+				E839212F23278B1400AB9764 /* APIClient */,
 				E839212B232789F800AB9764 /* etc */,
 			);
 			path = NewsViewer;
@@ -80,6 +85,22 @@
 				E839212C23278A0B00AB9764 /* NewsViewer-Bridging-Header.h */,
 			);
 			path = etc;
+			sourceTree = "<group>";
+		};
+		E839212F23278B1400AB9764 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				E839213023278B2300AB9764 /* APIClient.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		E83921322327904200AB9764 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				E83921332327905300AB9764 /* SourcesResponse.swift */,
+			);
+			path = "Data Models";
 			sourceTree = "<group>";
 		};
 		ED5AA30B0CBE45D707EC8C1A /* Frameworks */ = {
@@ -205,6 +226,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E839212E23278A0C00AB9764 /* main.swift in Sources */,
+				E839213123278B2300AB9764 /* APIClient.swift in Sources */,
+				E83921342327905300AB9764 /* SourcesResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
