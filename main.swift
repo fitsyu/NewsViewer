@@ -6,24 +6,26 @@
 //  Copyright © 2019 Fitsyu . All rights reserved.
 //
 
-import UIKit
+//import UIKit
 
 
-SourcesRepository.shared.fetchAll().then{
-    
-    // model
-    let newsSources = $0
-    
-    // view
-//    let coordinator = SourcesCoordinator()
-//    coordinator.delegate
-    let ui = TextBasedSourcesUI()
-    ui.show()
-    
-    let story = ViewingSourcesStory(data: newsSources, ui: ui)
-    
-    story.begin()
-}
+//SourcesRepository.shared.fetchAll().then{
+//
+//    // model
+//    let newsSources = $0
+//
+//    // view
+////    let coordinator = SourcesCoordinator()
+////    coordinator.delegate
+//    let ui = TextBasedSourcesUI()
+//    ui.show()
+//
+//    let story = ViewingSourcesStory(data: newsSources, ui: ui)
+//
+//    story.begin()
+//}
+//
+//
+//UIApplicationMain(CommandLine.argc, CommandLine.unsafeArgv, nil, nil)
 
-
-UIApplicationMain(CommandLine.argc, CommandLine.unsafeArgv, nil, nil)
+MainStory().begin()
