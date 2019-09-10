@@ -6,6 +6,8 @@
 //  Copyright © 2019 Fitsyu . All rights reserved.
 //
 
+import RxCocoa
+
 class TextBasedSourcesUI: SourcesUI {
     
     func show() {
@@ -18,4 +20,6 @@ class TextBasedSourcesUI: SourcesUI {
             print(source)
         }
     }
+    
+    var doneViewing: ControlEvent<Void>? = nil
 }

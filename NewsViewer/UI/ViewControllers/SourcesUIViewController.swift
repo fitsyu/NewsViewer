@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxCocoa
 
 class SourcesUIViewController: UIViewController, SourcesUI {
     
@@ -18,6 +19,7 @@ class SourcesUIViewController: UIViewController, SourcesUI {
     
     var models: [Source] = []
     
+    lazy var doneViewing: ControlEvent<Void>? = self.doneButton.rx.tap
     
     // ==========
     

@@ -72,8 +72,18 @@ extension MainStory: SourcesCoordinatorDelegate {
             let newsSources = $0
         
             let story = ViewingSourcesStory(data: newsSources, ui: ui)
-        
+            story.delegate = self
             story.begin()
+            
+            self.viewingSourcesStory = story
         }
+    }
+}
+
+
+extension MainStory: ViewingSourcesStoryDelegate {
+    
+    func doneViewing() {
+        sourcesCoordinator?.end()
     }
 }

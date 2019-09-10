@@ -6,7 +6,7 @@
 //  Copyright © 2019 Fitsyu . All rights reserved.
 //
 
-
+import RxSwift
 
 class ViewingSourcesStory: Story {
     
@@ -15,6 +15,8 @@ class ViewingSourcesStory: Story {
     
     var delegate: ViewingSourcesStoryDelegate?
     
+    let disposeBag = DisposeBag()
+    
     init(data: [Source], ui: SourcesUI) {
         self.data = data
         self.ui   = ui
@@ -22,10 +24,18 @@ class ViewingSourcesStory: Story {
     
     func begin() {
         
+        // settinp up the wires
+        ui?.doneViewing?.bind { [weak self] in
+            self?.delegate?.doneViewing()
+        }.disposed(by: disposeBag)
+        
+        
+        // present useful info
         ui?.setInformation(sources: data)
     }
 }
 
 protocol ViewingSourcesStoryDelegate: class {
     
+    func doneViewing()
 }
