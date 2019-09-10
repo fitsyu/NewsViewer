@@ -14,6 +14,7 @@
 		E83921342327905300AB9764 /* SourcesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83921332327905300AB9764 /* SourcesResponse.swift */; };
 		E83921372327910900AB9764 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83921362327910900AB9764 /* Repository.swift */; };
 		E83921392327915400AB9764 /* SourcesRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83921382327915400AB9764 /* SourcesRepo.swift */; };
+		E839213C2327929500AB9764 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839213B2327929500AB9764 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E83921332327905300AB9764 /* SourcesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesResponse.swift; sourceTree = "<group>"; };
 		E83921362327910900AB9764 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		E83921382327915400AB9764 /* SourcesRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesRepo.swift; sourceTree = "<group>"; };
+		E839213B2327929500AB9764 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F97803B40C4DAEF59C5FA818 /* Pods-NewsViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsViewer.release.xcconfig"; path = "Target Support Files/Pods-NewsViewer/Pods-NewsViewer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 		E8392118232789D200AB9764 /* NewsViewer */ = {
 			isa = PBXGroup;
 			children = (
+				E839213A2327928900AB9764 /* Coordinator */,
 				E8392135232790ED00AB9764 /* Repositories */,
 				E83921322327904200AB9764 /* Data Models */,
 				E839212F23278B1400AB9764 /* APIClient */,
@@ -115,6 +118,14 @@
 				E83921382327915400AB9764 /* SourcesRepo.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E839213A2327928900AB9764 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E839213B2327929500AB9764 /* Coordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		ED5AA30B0CBE45D707EC8C1A /* Frameworks */ = {
@@ -241,6 +252,7 @@
 			files = (
 				E839212E23278A0C00AB9764 /* main.swift in Sources */,
 				E839213123278B2300AB9764 /* APIClient.swift in Sources */,
+				E839213C2327929500AB9764 /* Coordinator.swift in Sources */,
 				E83921372327910900AB9764 /* Repository.swift in Sources */,
 				E83921392327915400AB9764 /* SourcesRepo.swift in Sources */,
 				E83921342327905300AB9764 /* SourcesResponse.swift in Sources */,
