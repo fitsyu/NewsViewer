@@ -11,7 +11,7 @@ protocol Story: class {
     func begin()
 }
 
-protocol StoryDelegate {
+protocol StoryDelegate: class {
     
     func storyDidEnd(_ story: Story)
 }

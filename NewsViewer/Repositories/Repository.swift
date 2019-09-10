@@ -10,7 +10,7 @@ import Foundation
 
 import Promises
 
-protocol Repository {
+protocol Repository: class {
     
     associatedtype T
     

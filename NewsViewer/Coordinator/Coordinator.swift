@@ -10,7 +10,7 @@
 import UIKit
 
 // Coordinator
-protocol Coordinator {
+protocol Coordinator: class {
     
     var presentee: UIViewController? { get }
     

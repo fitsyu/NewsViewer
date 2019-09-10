@@ -37,7 +37,7 @@ class SourcesCoordinator: Coordinator {
     }
 }
 
-protocol SourcesCoordinatorDelegate {
+protocol SourcesCoordinatorDelegate: class {
     
     func didStarted(ui: SourcesUI)
 }

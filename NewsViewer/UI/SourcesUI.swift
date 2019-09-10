@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol SourcesUI {
+protocol SourcesUI: class {
     
     func setInformation(sources: [Source])
 }
