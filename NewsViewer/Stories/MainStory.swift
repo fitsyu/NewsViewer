@@ -60,7 +60,7 @@ extension MainStory: SourcesCoordinatorDelegate {
         
         sourcesCoordinator = SourcesCoordinator()
         sourcesCoordinator?.delegate = self
-        sourcesCoordinator?.start()
+        sourcesCoordinator?.start(from: dataStore.window!)
     }
     
     func didStarted(ui: SourcesUI) {

@@ -30,10 +30,22 @@ class SourcesCoordinator: Coordinator {
     
     func start(from top: UIViewController?) {
         
+        // load
+        let ui = SourcesUIViewController()
+        
+        // navigate
+        top?.present(ui, animated: false, completion: {
+            
+            // notify
+            self.delegate?.didStarted(ui: ui)
+        })
+        
+        // save
+        presentee = ui
     }
     
     func start(from top: UIWindow) {
-        
+        start(from: top.rootViewController)
     }
 }
 
