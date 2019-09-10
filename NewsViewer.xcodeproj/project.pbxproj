@@ -12,6 +12,8 @@
 		E839212E23278A0C00AB9764 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839212D23278A0C00AB9764 /* main.swift */; };
 		E839213123278B2300AB9764 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839213023278B2300AB9764 /* APIClient.swift */; };
 		E83921342327905300AB9764 /* SourcesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83921332327905300AB9764 /* SourcesResponse.swift */; };
+		E83921372327910900AB9764 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83921362327910900AB9764 /* Repository.swift */; };
+		E83921392327915400AB9764 /* SourcesRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83921382327915400AB9764 /* SourcesRepo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E839212D23278A0C00AB9764 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E839213023278B2300AB9764 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		E83921332327905300AB9764 /* SourcesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesResponse.swift; sourceTree = "<group>"; };
+		E83921362327910900AB9764 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		E83921382327915400AB9764 /* SourcesRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesRepo.swift; sourceTree = "<group>"; };
 		F97803B40C4DAEF59C5FA818 /* Pods-NewsViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsViewer.release.xcconfig"; path = "Target Support Files/Pods-NewsViewer/Pods-NewsViewer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +74,7 @@
 		E8392118232789D200AB9764 /* NewsViewer */ = {
 			isa = PBXGroup;
 			children = (
+				E8392135232790ED00AB9764 /* Repositories */,
 				E83921322327904200AB9764 /* Data Models */,
 				E839212F23278B1400AB9764 /* APIClient */,
 				E839212B232789F800AB9764 /* etc */,
@@ -101,6 +106,15 @@
 				E83921332327905300AB9764 /* SourcesResponse.swift */,
 			);
 			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		E8392135232790ED00AB9764 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E83921362327910900AB9764 /* Repository.swift */,
+				E83921382327915400AB9764 /* SourcesRepo.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		ED5AA30B0CBE45D707EC8C1A /* Frameworks */ = {
@@ -227,6 +241,8 @@
 			files = (
 				E839212E23278A0C00AB9764 /* main.swift in Sources */,
 				E839213123278B2300AB9764 /* APIClient.swift in Sources */,
+				E83921372327910900AB9764 /* Repository.swift in Sources */,
+				E83921392327915400AB9764 /* SourcesRepo.swift in Sources */,
 				E83921342327905300AB9764 /* SourcesResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
