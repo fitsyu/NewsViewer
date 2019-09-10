@@ -10,7 +10,19 @@ import UIKit
 
 
 SourcesRepository.shared.fetchAll().then{
-    dump($0)
+    
+    // model
+    let newsSources = $0
+    
+    // view
+//    let coordinator = SourcesCoordinator()
+//    coordinator.delegate
+    let ui = TextBasedSourcesUI()
+    ui.show()
+    
+    let story = ViewingSourcesStory(data: newsSources, ui: ui)
+    
+    story.begin()
 }
 
 
