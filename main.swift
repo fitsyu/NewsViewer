@@ -6,4 +6,4 @@
 //  Copyright © 2019 Fitsyu . All rights reserved.
 //
 
-print("hello")
+MainStory().begin()
