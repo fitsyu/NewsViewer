@@ -21,16 +21,6 @@ protocol Coordinator {
     
     func start(from top: UIViewController?)
     
-    
-    /**
-     load the viewController
-     
-     create a tabItem for it
-     
-     add the ViewConttoler to the UITabControoler's children
-     */
-    func start(from top: UITabBarController)
-    
     /**
      load the viewController
      and set it as the rootViewController for UIWindow
